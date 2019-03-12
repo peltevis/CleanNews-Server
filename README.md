@@ -1,6 +1,6 @@
 # CleanNews-Server
 
-##Used libraries:
+## Used libraries:
 - body-parser
 - express
 - nodemon
