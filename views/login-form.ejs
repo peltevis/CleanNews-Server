@@ -1,0 +1,22 @@
+<form action="/login" method="post" id="loginForm">
+  Username: <input type="text" name="username"><br>
+  Password: <input type="password" name="password"><br>
+  <input type="submit" value="Login">
+</form>
+<button onclick="showRegister()" id="showRegisterButton">Register</button>
+
+<form action="/signup" style="display: none;" method="post" id="registerForm">
+  Username: <input type="text" name="username"><br>
+  Email: <input type="text" name="email"><br>
+  Password: <input type="password" name="password"><br>
+  Confirm Password: <input type="password" name="passwordConf"><br>
+  <input type="submit" value="Sign Up">
+</form>
+
+<script>
+function showRegister(){
+    document.getElementById("registerForm").style.display='block';
+    document.getElementById("loginForm").style.display='none';
+    document.getElementById("showRegisterButton").style.display='none';
+}
+</script>
